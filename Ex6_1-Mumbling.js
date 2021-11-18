@@ -1,7 +1,7 @@
 const accum = (str) => {
     return Array.from(str).map((letter, index) => {
-        return letter.toUpperCase() + letter.repeat(index);
+        return letter.toUpperCase() + letter.repeat(index).toLowerCase();
     }).join('-');
 }
 
-console.log(accum('abcd'));
+// console.log(accum('RqaEzty'));
