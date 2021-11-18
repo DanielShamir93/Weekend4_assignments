@@ -3,9 +3,9 @@ const countDuplicates = (str) => {
     let result = 0;
     str = str.toLowerCase();
     for(letter of str) {
-        if (str.lastIndexOf(letter) !== str.indexOf(letter)) {
+        if (str.indexOf(letter) !== str.lastIndexOf(letter)) {
             if (!duplicates.hasOwnProperty(letter)) {
-                duplicates[letter] = 1;
+                duplicates[letter] = '';
                 result++;
             }
         }
